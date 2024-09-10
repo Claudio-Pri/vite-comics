@@ -12,17 +12,15 @@ import AppHeader from './components/AppHeader.vue';
   export default {
   data() {
     return { 
-      count: 0
+      
      }
   },
   //2) Dichiarazione del componente (prima o dopo data())
   components: {
-    AppHeader
+    AppHeader,
   },
   methods: {
-    incrementCount() {
-      this.count++;
-    }
+    
   }
 }
 </script>
@@ -32,9 +30,10 @@ import AppHeader from './components/AppHeader.vue';
   <div>
     <!-- 3) Utilizzo del componente come tag htm (self-closing) -->
     <AppHeader/>
-    <button @click="incrementCount()">
-      {{ count }}
-    </button>
+    
+    <main>Main</main>
+    <footer>Footer</footer>
+    
   </div>
 </template>
 
@@ -42,5 +41,8 @@ import AppHeader from './components/AppHeader.vue';
 // npm install -g sass
 // @use 'assets/scss/main.scss' as *;
 // @use 'assets/scss/variables.scss' as *;
+
+
+
 
 </style>
