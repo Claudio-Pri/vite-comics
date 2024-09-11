@@ -81,10 +81,7 @@
 </template>
 
 <style scoped>
-.container {
-max-width: 1200px;
-margin: 0 auto;
-}
+
 header {
 padding: 30px 0;
 background-color: white;
@@ -116,4 +113,5 @@ ul li a:hover {
   color:#0C7CEC;
  
 }
+
 </style>

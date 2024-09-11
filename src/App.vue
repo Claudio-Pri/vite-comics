@@ -8,6 +8,7 @@ Passaggi import componente:
 
 // 1) Importazione componente
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 
   export default {
   data() {
@@ -18,6 +19,7 @@ import AppHeader from './components/AppHeader.vue';
   //2) Dichiarazione del componente (prima o dopo data())
   components: {
     AppHeader,
+    AppMain,
   },
   methods: {
     
@@ -30,8 +32,10 @@ import AppHeader from './components/AppHeader.vue';
   <div>
     <!-- 3) Utilizzo del componente come tag htm (self-closing) -->
     <AppHeader/>
+
+    <AppMain/>
     
-    <main>Main</main>
+    
     <footer>Footer</footer>
     
   </div>
@@ -41,8 +45,5 @@ import AppHeader from './components/AppHeader.vue';
 // npm install -g sass
 // @use 'assets/scss/main.scss' as *;
 // @use 'assets/scss/variables.scss' as *;
-
-
-
 
 </style>
