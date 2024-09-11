@@ -226,7 +226,19 @@ import AppMain from './components/AppMain.vue';
       </div>
       <div class="footer-bottom">
         <div class="container">
-          footer bottom
+          <div class="row">
+            <div class="col-50">
+              <button class="sign-up-button">Sign-up now!</button>
+            </div>
+            <div class="col-50 social-links">
+              <h4>follow us</h4>
+              <img src="/src/assets/img/footer-facebook.png" alt="">
+              <img src="/src/assets/img/footer-twitter.png" alt="">
+              <img src="/src/assets/img/footer-youtube.png" alt="">
+              <img src="/src/assets/img/footer-pinterest.png" alt="">
+              <img src="/src/assets/img/footer-periscope.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </footer>
@@ -268,6 +280,25 @@ ul li a {
   background-position: center;
   background-size:cover;
 }
-
+.footer-bottom {
+  background-color: #303030;
+  padding: 25px 0;
+}
+.sign-up-button {
+  padding: 15px;
+  color:white;
+  font-size:1.2rem;
+  border: 2px solid #0C7CEC;
+  background-color: #303030;
+}
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-links h4 {
+  color:#0C7CEC;
+  font-size: 1.2rem;
+}
 
 </style>
