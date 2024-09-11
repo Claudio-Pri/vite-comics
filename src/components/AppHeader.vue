@@ -80,38 +80,40 @@
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 header {
 padding: 30px 0;
 background-color: white;
 margin-top: 10px;
-}
-.my-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-ul li {
-  margin-right: 15px;
-}
-ul li a {
-  display: inline-block;
-  text-decoration: none;
-  text-align: right;
-  text-transform: uppercase;
-  color:#4C4D4A;
-  font-weight: bold;
-}
-ul li a:hover {
-  color:#0C7CEC;
- 
+  .my-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        li {
+          margin-right: 15px;
+          a {
+            display: inline-block;
+            text-decoration: none;
+            text-align: right;
+            text-transform: uppercase;
+            color:#4C4D4A;
+            font-weight: bold;
+
+            &:hover {
+              color:#0C7CEC;
+            
+            }
+          }
+        }
+      }
+  }
+  
 }
 
 </style>

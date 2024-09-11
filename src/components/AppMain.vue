@@ -64,7 +64,7 @@
     </main>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
   p {
   color:white;
   padding: 50px 0;
@@ -74,41 +74,32 @@
 }
 .main-bottom {
   background-color: #0C7CEC;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+      li {
+        padding: 50px 0;
+        
+        a {
+          text-decoration: none;
+          color: white;
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 1.1rem;
+          display: flex;
+          align-items: center;
+            img {
+              margin-right: 15px;
+              width: 40px;
+
+            }
+        }
+      }
+  }
 }
-
-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0;
-}
-
-ul li {
-  padding: 50px 0;
-  
-}
-
-ul li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  
-
-}
-ul li a img {
-  margin-right: 15px;
-  width: 40px;
-
-}
-
-
-
-
 
 </style>

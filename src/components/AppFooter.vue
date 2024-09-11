@@ -218,55 +218,59 @@
 </template>
 
 <style lang="scss" scoped>
+
   footer {
   color: white;
-}
-h4 {
-  text-transform: uppercase;
-  padding: 15px 0;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-ul li {
-  padding: 3px 0;
-}
-ul li a {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: white;
+    .footer-top {
+      background-image: url(/src/assets/img/footer-bg.jpg);
+      background-position: center;
+      background-size: cover;
+      h4 {
+          text-transform: uppercase;
+          padding: 15px 0;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+            li {
+              padding: 3px 0;
 
-}
-.footer-top {
-  background-image: url(/src/assets/img/footer-bg.jpg);
-  background-position: center;
-  background-size: cover;
-}
-.bg-logo {
-  background-image: url(/src/assets/img/dc-logo-bg.png);
-  background-position: center;
-  background-size:cover;
-}
-.footer-bottom {
-  background-color: #303030;
-  padding: 25px 0;
-}
-.sign-up-button {
-  padding: 15px;
-  color:white;
-  font-size:1.2rem;
-  border: 2px solid #0C7CEC;
-  background-color: #303030;
-}
-.social-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.social-links h4 {
-  color:#0C7CEC;
-  font-size: 1.2rem;
+              a {
+                text-decoration: none;
+                text-transform: capitalize;
+                color: white;
+
+              }
+            }
+        }
+        .bg-logo {
+          background-image: url(/src/assets/img/dc-logo-bg.png);
+          background-position: center;
+          background-size:cover;
+        }
+    }
+    .footer-bottom {
+      background-color: #303030;
+      padding: 25px 0;
+
+      .sign-up-button {
+        padding: 15px;
+        color:white;
+        font-size:1.2rem;
+        border: 2px solid #0C7CEC;
+        background-color: #303030;
+      }
+      .social-links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+          h4 {
+            color:#0C7CEC;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+          }
+      }
+    } 
 }
 
 </style>
