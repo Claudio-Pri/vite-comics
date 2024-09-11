@@ -5,31 +5,31 @@
       mainLinks: [
       {
           label: 'digital comics',
-          icon:'../assets/img/buy-comics-digital-comics.png',
+          icon:'src/assets/img/buy-comics-digital-comics.png',
           url: '#',
           active: false
         },
         {
           label: 'dc merchandise',
-          icon:'../assets/img/buy-comics-merchandise.png',
+          icon:'src/assets/img/buy-comics-merchandise.png',
           url: '#',
           active: false
         },
         {
           label: 'subscription',
-          icon:'../assets/img/buy-comics-subscription.png',
+          icon:'src/assets/img/buy-comics-subscriptions.png',
           url: '#',
           active: false
         },
         {
           label: 'comic shop locator',
-          icon:'../assets/img/buy-comics-shop-locator.png',
+          icon:'src/assets/img/buy-comics-shop-locator.png',
           url: '#',
           active: false
         },
         {
           label: 'dc power visa',
-          icon:'../assets/img/buy-dc-power-visa.svg',
+          icon:'src/assets/img/buy-dc-power-visa.svg',
           url: '#',
           active: false
         },
@@ -51,7 +51,7 @@
           <ul>
             <li v-for="(link, index) in mainLinks" :key="index">
               <a href="#">
-                <!-- :src="link.icon" non funziona perchè? -->
+                <!-- :src="link.icon" non funziona perchè? con percorso assoluto funziona--chiedere -->
                 <img :src="link.icon" :alt="link.label">
                 {{ link.label }}
               </a>
@@ -81,6 +81,7 @@ ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  align-items: center;
   padding: 0;
 }
 
@@ -102,7 +103,7 @@ ul li a {
 }
 ul li a img {
   margin-right: 15px;
-  width: 60px;
+  width: 40px;
 
 }
 
